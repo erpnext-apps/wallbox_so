@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include wallbox_so *.css
+recursive-include wallbox_so *.csv
+recursive-include wallbox_so *.html
+recursive-include wallbox_so *.ico
+recursive-include wallbox_so *.js
+recursive-include wallbox_so *.json
+recursive-include wallbox_so *.md
+recursive-include wallbox_so *.png
+recursive-include wallbox_so *.py
+recursive-include wallbox_so *.svg
+recursive-include wallbox_so *.txt
+recursive-exclude wallbox_so *.pyc
