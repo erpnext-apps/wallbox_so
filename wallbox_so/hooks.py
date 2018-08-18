@@ -14,7 +14,9 @@ app_license = "MIT"
 
 doc_events = {
 	"Sales Order": {
-		"on_update_after_submit": "wallbox_so.utils.update_delivery_from_so"
+		"before_submit" : "wallbox_so.utils.consume_stock_by_so",
+		"on_submit": "wallbox_so.utils.mark_so_completed",
+		"on_cancel" : "wallbox_so.utils.cancel_stock_entry"
 	}
 }
 
